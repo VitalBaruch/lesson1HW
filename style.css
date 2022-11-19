@@ -1,47 +1,50 @@
 body {
-    background: linear-gradient(45deg, rgb(135, 132, 132), black);
+    background: linear-gradient(45deg, grey, black);
 }
-#title {
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 5px wheat;
-    text-decoration: underline;
+#main_title {
+    font-size: 45px;
     font-weight: bolder;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.sub_title {
+.titles {
+    font-size: 25px;
     text-align: center;
     text-decoration: underline;
-    color: blanchedalmond;
+    color: grey;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: -0.7px 0px black, 0px 0.7px black, 0.7px 0px black, 0px -0.7px black;
-    font-weight: bolder;
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+    margin-bottom: 0%;
 }
 
 .subject {
     margin: 5% 10% 5% 10%;
     outline-style: double;
     outline-color: white;
+    outline-offset: 5px;
+}
+
+.subject:hover {
+    outline-color: aqua;
 }
 
 .input_form {
-    justify-content: space-between;
+    line-height: 0;
 }
 
 .text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
-    color: azure;
+    color: white;
+    
 }
 
 .text_box {
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     width: 100%;
-    border: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 7px 0;
+    border: 0;
     background: transparent;
     border-bottom: 3px solid white;
     outline: 0;
@@ -50,6 +53,7 @@ body {
 .text_box:focus {
     border-bottom: 3px solid aqua;
     color: aqua;
+    font-weight: bolder;
 }
 
 .text_area {
@@ -57,7 +61,52 @@ body {
     width: 90%;
     height: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
     resize: none;
-    border-style: solid;
+    overflow: hidden;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 3px;
     margin: 5% 5% 0 0;
+    background: rgba(0, 0, 0, 0.1) ;
+    outline: none;
+    text-indent: 3px;
 }
+
+.text_area:focus {
+    border-width: 3px;
+    border-color: aqua;
+    font-weight: bolder;
+}
+
+#last_div {
+    margin-bottom: 40px;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+#submit_button {
+    background: linear-gradient(144deg,black, rgb(10, 3, 63), grey);
+    border: solid 3px white;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit_button:hover {
+    background: transparent;
+    border-color: aqua;
+}
+
+#submit_button:active {
+    transform: translateY(3px);
+    transition-duration: 0.3s;
+}
+

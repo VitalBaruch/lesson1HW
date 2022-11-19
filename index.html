@@ -9,73 +9,78 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body dir="rtl">
-    <h1 id="title">קורות חיים</h1>
+    <h1 id="main_title" class="titles">קורות חיים</h1>
 
     <div class="subject">
-        <h3 class="sub_title">פרטים כלליים</h3>
+        <h3 class="titles">פרטים כלליים</h3>
         <div class="input_form">
             <p class="text">שם מלא</p>
-            <input class="text_box"></input>    
+            <input class="text_box" placeholder="לדוגמה: ויטל ברוך">    
         </div>
         <div class="input_form">
             <p class="text">כתובת מגורים</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: שדרות האלונים 8, באר יעקב">
         </div>
         <div class="input_form">
             <p class="text">מייל</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: vitalb1999@gmail.com">
         </div>
         <div class="input_form">
             <p class="text">טלפון</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: 0522573489">
         </div>
     </div>
     
     <div class="subject">    
-        <h3 class="sub_title">השכלה</h3>
-        <div class="input_form">
-            <p class="text">שנים</p>
-            <input class="text_box"></input>    
-        </div>
+        <h3 class="titles">השכלה</h3>
         <div class="input_form">
             <p class="text">פרטי השכלה</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: בגרות מדעי המחשב פיזיקה, שנה ראשונה בתואר מדעי המחשב">    
         </div>
         <div class="input_form">
             <p class="text">מוסד לימודים</p>
-            <input class="text_box"></input>
-        </div>
-    </div>
-
-    <div class="subject">    
-        <h3 class="sub_title">ניסיון תעסוקתי</h3>
-        <div class="input_form">
-            <p class="text">מקום עבודה</p>
-            <input class="text_box"></input>    
+            <input class="text_box" placeholder="לדוגמה: יוענה ז'בוטינסקי, בר אילן">
         </div>
         <div class="input_form">
             <p class="text">שנים</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: 12 שנות לימוד">
+        </div>
+    </div>
+
+    <div class="subject">    
+        <h3 class="titles">ניסיון תעסוקתי</h3>
+        <div class="input_form">
+            <p class="text">מקום עבודה</p>
+            <input class="text_box" placeholder="לדוגמה: שלמה סיקסט, טקטיקס">    
         </div>
         <div class="input_form">
             <p class="text">פירוט מיקום העבודה ותפקיד</p>
-            <input class="text_box"></input>
+            <input class="text_box" placeholder="לדוגמה: אחראי איזור דרום, מורה לפיתוח אפליקציות ורובוטיקה לילדים מצטיינים">
+        </div>
+        <div class="input_form">
+            <p class="text">שנים</p>
+            <input class="text_box" placeholder="לדוגמה: שנה, כרגע כמה חודשים עדין עובד שם">
         </div>
     </div>
 
     <div class="subject">    
-        <h3 class="sub_title">שפות</h3>
-        <textarea class="text_area"></textarea>    
+        <h3 class="titles">שפות</h3>
+        <textarea class="text_area" placeholder="לדוגמה: עברית, אנגלית"></textarea>    
     </div>
 
     <div class="subject">    
-        <h3 class="sub_title">שירות צבאי</h3>
-        <textarea class="text_area"></textarea>
+        <h3 class="titles">שירות צבאי</h3>
+        <textarea class="text_area" placeholder="לדוגמה: משק שלישות בג'וליס"></textarea>
     </div>
 
-    <div class="subject">
-        <h3 class="sub_title">כלים ותוכנות</h3>
-        <textarea class="text_area"></textarea>
+    <div class="subject" id="last_div">
+        <h3 class="titles">כלים ותוכנות</h3>
+        <textarea class="text_area" placeholder="לדוגמה: מלמד c# לבגרויות
+ משתמש ב: python, c, java, javascript..."></textarea>
+    </div>
+
+    <div class="button_div">
+    <button id="submit_button">אישור ומעבר לעמוד הבא</button>
     </div>
 
 </body>
